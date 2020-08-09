@@ -6,7 +6,7 @@ import './OfferBox.css'
 function OfferBox(props) {
     return (
         <div className = "OfferBox grid-item">
-            <OfferImage/>
+            <OfferImage image={props.image}/>
             <OfferDescription description={props.description}/>
         </div>
     )

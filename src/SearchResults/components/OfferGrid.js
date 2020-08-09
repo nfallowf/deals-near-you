@@ -8,6 +8,7 @@ function OfferGrid(props) {
                 <OfferBox
                     key = {i}
                     description={"Item #" + i}
+                    image={"./default_image.jpeg"}
                 />
             )
         }

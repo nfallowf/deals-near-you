@@ -2,7 +2,7 @@ import React from 'react'
 import OfferGrid from './OfferGrid'
 function OfferSection(props) {
     const sectionStyle = {
-        backgroundColour: "#f0f5f5",
+        backgroundColor: "#f0f5f5",
         borderStyle: "ridge",
         width: "80%",
         margin: "auto",

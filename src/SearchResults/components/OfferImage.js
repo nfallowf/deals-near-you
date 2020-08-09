@@ -1,10 +1,10 @@
 import React from 'react'
 import './OfferImage.css'
-
-function OfferImage() {
+import defaultimage from "./default_image.jpeg"
+function OfferImage(props) {
     return (
         <div id="ImagePlaceholder">
-            {/*Placeholder for an image of an offer/deal*/}
+            <img src={defaultimage} height="100%" width="100%"/>
         </div>
     )
 }
