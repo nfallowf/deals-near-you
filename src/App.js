@@ -9,12 +9,12 @@ function App() {
       <header className="App-header">
 
       </header>
-      {/*}
+
       <section className="Main-Content">
-        {/*This is where search results will be diplayed}
+        {/*This is where search results will be diplayed*/}
         <SearchResults/>
       </section>
-      {*/}
+
     </div>
   );
 }
