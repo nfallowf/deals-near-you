@@ -1,9 +1,15 @@
 import React from 'react'
 import OfferBox from './OfferBox'
 import './OfferGrid.css'
-function OfferGrid(props) {
-    const offerBoxes = []
-        for (let i = 1; i <= props.numItems ; i ++) {
+
+class OfferGrid extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {}
+    }
+    render() {
+        const offerBoxes = []
+        for (let i = 1; i <= this.props.numItems ; i ++) {
             offerBoxes.push(
                 <OfferBox
                     key = {i}
@@ -17,6 +23,7 @@ function OfferGrid(props) {
                 {offerBoxes}
             </div>
         )
+    }
 }
 
 export default OfferGrid

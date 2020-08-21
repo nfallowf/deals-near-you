@@ -3,20 +3,26 @@ import logo from './logo.svg';
 import './App.css';
 import SearchResults from './SearchResults/SearchResults'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+class App extends React.Component {
+    constructor() {
+        super()
+        this.state = {}
+    }
+    render() {
+        return (
+            <div className="App">
+              <header className="App-header">
 
-      </header>
+              </header>
 
-      <section className="Main-Content">
-        {/*This is where search results will be diplayed*/}
-        <SearchResults/>
-      </section>
+              <section className="Main-Content">
+                {/*This is where search results will be diplayed*/}
+                <SearchResults/>
+              </section>
 
-    </div>
-  );
+            </div>
+          );
+    }
 }
 
 export default App;

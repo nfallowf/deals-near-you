@@ -1,27 +1,29 @@
 import React from 'react'
 import OfferSection from './components/OfferSection'
-function SearchResults() {
-    const sections = []
-    sections.push(
-        <OfferSection
-            title={"Trending"}
-            numItems={12}
-            key={"trending"}
-        />
-    )
-    sections.push(
-        <OfferSection
-            title={"Food"}
-            numItems={8}
-            key={"food"}
-        />
-    )
-    return (
+import SectionsData from './SectionsData'
+class SearchResults extends React.Component {
+    constructor() {
+        super()
+        this.state = {}
+    }
 
-        <div>
-            {sections}
-        </div>
-    );
+    componentDidMount() {
+        const sectionState = SectionsData.map(section => <OfferSection
+                                                        title={section.sectionTitle}
+                                                        numItems={section.numItems}
+                                                        key={section.id}
+                                                    />)
+        this.setState({sections: sectionState})
+    }
+
+    render() {
+        return (
+
+            <div>
+                {this.state.sections}
+            </div>
+        );
+    }
 }
 
 export default SearchResults
