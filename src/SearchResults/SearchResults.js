@@ -31,7 +31,6 @@ class SearchResults extends React.Component {
                                 title={filterValue['label']}
                                 numItems={12}
                             />
-        console.log(filterSection)
         this.setState({sections: filterSection})
     }
 
