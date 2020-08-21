@@ -17,7 +17,9 @@ class App extends React.Component {
 
               <section className="Main-Content">
                 {/*This is where search results will be diplayed*/}
-                <SearchResults/>
+                <div style={{width: "80%", marginLeft: "auto", marginRight: "auto"}}>
+                    <SearchResults/>
+                </div>
               </section>
 
             </div>

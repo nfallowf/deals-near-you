@@ -1,10 +1,17 @@
 import React from 'react'
 import OfferSection from './components/OfferSection'
 import SectionsData from './SectionsData'
+import Filters from './components/Filters'
+import './SearchResults.css'
+
 class SearchResults extends React.Component {
     constructor() {
         super()
-        this.state = {}
+        this.state = {
+            filters: "", /*should be able to take multiple filterss in the future, for now just one string*/
+            filtersActive: false
+        }
+        this.onFilterChange = this.onFilterChange.bind(this)
     }
 
     componentDidMount() {
@@ -16,10 +23,24 @@ class SearchResults extends React.Component {
         this.setState({sections: sectionState})
     }
 
+    onFilterChange(filterValue) {
+        console.log(filterValue)
+        this.setState({filters: filterValue})
+        this.setState({filtersActive: true})
+        let filterSection = <OfferSection
+                                title={filterValue['label']}
+                                numItems={12}
+                            />
+        console.log(filterSection)
+        this.setState({sections: filterSection})
+    }
+
     render() {
         return (
-
             <div>
+                <section id="filters">
+                    <Filters onFilterChange={this.onFilterChange}/>
+                </section>
                 {this.state.sections}
             </div>
         );
