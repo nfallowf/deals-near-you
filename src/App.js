@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-//import './App.css';
+//import logo from './logo.svg';
+import './App.css';
 import SearchResults from './SearchResults/SearchResults'
 
 class App extends React.Component {

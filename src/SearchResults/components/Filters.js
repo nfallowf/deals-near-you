@@ -41,16 +41,16 @@ function Filters(props) {
         <div className="filters">
             <h3>Filters</h3>
             <div style={filterStyle}>
-                <Select onChange={props.onFilterChange} options={categoryOptions}/>
+                <Select onChange={props.onFilterChange} options={categoryOptions} placeholder="Category"/>
             </div>
             <div style={filterStyle}>
-                <Select onChange={props.onFilterChange} options={priceOptions}/>
+                <Select onChange={props.onFilterChange} options={priceOptions} placeholder="Price"/>
             </div>
             <div style={filterStyle}>
-                <Select onChange={props.onFilterChange} options={distanceOptions}/>
+                <Select onChange={props.onFilterChange} options={distanceOptions} placeholder="Distance"/>
             </div>
             <div style={filterStyle}>
-                <Select onChange={props.onFilterChange} options={ratingOptions}/>
+                <Select onChange={props.onFilterChange} options={ratingOptions} placeholder="Ratings"/>
             </div>
 
         </div>
