@@ -24,7 +24,7 @@ const SectionsData = [
         id: 5,
         sectionTitle: "Groceries",
         numItems: 3
-    },
+    }
 ]
 
 export default SectionsData

@@ -18,8 +18,12 @@ class OfferSection extends React.Component {
         return (
             <div style={sectionStyle}>
                 <h3>{this.props.title}</h3>
-                {/*}filter section to be used for api call etc {*/}
-                <OfferGrid filterSection={this.state.sectionTitle} numItems={this.props.numItems}/>
+                <OfferGrid
+                    filterCategory={this.props.category}
+                    filterPrice={this.props.price}
+                    filterDistance={this.props.distance}
+                    filterRating={this.props.rating}
+                />
             </div>
         )
     }

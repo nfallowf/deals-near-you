@@ -4,7 +4,7 @@ import defaultimage from "./default_image.jpeg"
 function OfferImage(props) {
     return (
         <div id="ImagePlaceholder">
-            <img alt="broken image" src={defaultimage} height="100%" width="100%"/>
+            <img alt="Missing" src={defaultimage} height="100%" width="100%"/>
         </div>
     )
 }
